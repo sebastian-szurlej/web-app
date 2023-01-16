@@ -21,6 +21,10 @@ const router = createRouter({
       name: "page-two",
       component: PageTwo,
     },
+    {
+      path: "/:pathMatch(.*)*",
+      redirect: "/",
+    },
   ],
 });
 
