@@ -5,4 +5,19 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { onMounted } from "vue";
+import ExampleService from "@/services/ExampleService";
+
+onMounted(() => {
+  const exampleService = new ExampleService();
+  exampleService
+    .getData()
+    .then((data) => {
+      console.log(data);
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+});
+</script>
