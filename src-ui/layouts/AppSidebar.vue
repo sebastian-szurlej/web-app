@@ -17,7 +17,7 @@
 </template>
 
 <script setup>
-import { menuItems } from "@/layouts/appSideBarHelper.js";
+import { menuItems } from "@/layouts/appSidebarHelper.js";
 </script>
 
 <style scoped></style>
